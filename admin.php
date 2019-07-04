@@ -80,7 +80,7 @@
           <meta charset="utf-8">
           <title>kurZ - Adminpanel</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="icon" type="image/png" href="http://azeo.eu/s/create/favicon.png" sizes="512x512">
+          <link rel="icon" type="image/png" href="http://<URL>/create/favicon.png" sizes="512x512">
           <!-- FONTS -->
           <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
           <style type="text/css">
