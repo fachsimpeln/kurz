@@ -5,4 +5,4 @@ Options +FollowSymLinks
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule .* http://<URL>/req.php?url=%{REQUEST_URI} [L]
+RewriteRule .* ./r.php?url=%{REQUEST_URI} [L]
