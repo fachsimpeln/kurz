@@ -43,7 +43,7 @@
                $length = 0;
                do {
                     // Generate random number
-                    $code = mt_rand(10, 1000 + $len);
+                    $code = mt_rand(10, 1000 + $length);
 
                     $path = $this->GetPath(Functions::Base32Encode($code));
 
@@ -53,9 +53,9 @@
                     $code = Functions::Base32Encode($code);
 
                     // If there is a next round, add 10 for the random number generator
-                    $len += 10;
+                    $length += 10;
 
-               } while (file_exists($path) || Functions::Base32Decode($code) !== $temp_code || !$this->ValidateCode($code));
+               } while (file_exists($path) || Functions::Base32Decode($code) === $temp_code || !$this->ValidateCode($code));
 
                $this->ID = $code;
                $this->PATH = $path;
